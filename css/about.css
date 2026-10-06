@@ -1,0 +1,5 @@
+/* ABOUT: teks misi (kata menyala saat scroll) + statistik */
+.mis{font-size:clamp(28px,4.6vw,64px);line-height:1.08;letter-spacing:-.035em;font-weight:600;margin:0;max-width:1100px}
+.mis .w{color:var(--mute);opacity:.35;transition:color .25s,opacity .25s}.mis .w.on{color:var(--fg);opacity:1}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));margin-top:90px;border-top:1px solid var(--fg)}
+.stat{padding:22px 20px 0 0}.stat b{display:block;font-size:clamp(56px,8vw,120px);line-height:1;letter-spacing:-.05em}.stat span{color:var(--mute)}

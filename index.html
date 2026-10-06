@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="Krama Creative adalah digital creative agency: branding, website, desain, produksi video dan foto, serta KOL. Dari ide sampai eksekusi.">
+<meta property="og:title" content="Krama Creative — Digital Creative Agency">
+<meta property="og:description" content="Empat praktisi, satu tim. Dari ide sampai eksekusi.">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<title>Krama Creative — Digital Creative Agency</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/nav.css">
+<link rel="stylesheet" href="css/hero.css">
+<link rel="stylesheet" href="css/about.css">
+<link rel="stylesheet" href="css/roads.css">
+<link rel="stylesheet" href="css/work.css">
+<link rel="stylesheet" href="css/services.css">
+<link rel="stylesheet" href="css/clients.css">
+<link rel="stylesheet" href="css/contact.css">
+<link rel="stylesheet" href="css/cursor.css">
+<script src="js/utils.js" defer></script>
+<script src="js/data.js" defer></script>
+<script src="js/nav.js" defer></script>
+<script src="js/hero.js" defer></script>
+<script src="js/about.js" defer></script>
+<script src="js/roads.js" defer></script>
+<script src="js/work.js" defer></script>
+<script src="js/clients.js" defer></script>
+<script src="js/contact.js" defer></script>
+<script src="js/cursor.js" defer></script>
+</head>
+<body>
+
+<!-- ============ GLOBAL: progress bar & kursor custom (css/nav.css, css/cursor.css) ============ -->
+<div id="prog"></div><div id="cur"></div>
+
+<!-- ============ NAV (css/nav.css, js/nav.js) ============ -->
+<nav><div class="wrap">
+<a class="logo" href="#top" aria-label="Krama Creative, ke atas"><img src="assets/logo.png" alt="Krama Creative" width="287" height="48"></a>
+<div class="links"><a href="#about">Tentang</a><a href="#roads">4 Roads</a><a href="#work">Project</a><a href="#service">Layanan</a><a class="last" href="#contact">Kontak</a>
+<button class="tbtn" id="theme" aria-label="Ganti tema terang atau gelap">◐</button></div>
+</div></nav>
+
+
+<!-- ============ HERO (css/hero.css, js/hero.js) ============ -->
+<header class="hero" id="top">
+<div class="glow" id="glow"></div>
+<canvas id="cv" aria-hidden="true"></canvas>
+<div class="wrap">
+<h1><span><i>Semua jalan</i></span><span><i>menuju digital.</i></span></h1>
+<div class="sub"><p>Empat praktisi, satu tim. Dari ide sampai eksekusi.</p><small>Gerakkan kursor untuk menghubungkan titik</small></div>
+</div>
+</header>
+
+
+<!-- ============ ABOUT (css/about.css, js/about.js) ============ -->
+<section id="about"><div class="wrap">
+<p class="eyebrow">Tentang Krama, sejak 2018</p>
+<p class="mis" id="mis">Krama Creative lahir dari empat praktisi digital dengan keahlian berbeda yang sepakat bekerja di bawah satu atap. Dari konsep sampai eksekusi, kami membuat semua jadi mungkin di dunia digital untuk kebutuhan klien yang terus tumbuh.</p>
+<div class="stats">
+<div class="stat"><b data-v="2018" data-s="">0</b><span>Tahun berdiri</span></div>
+<div class="stat"><b data-v="4">0</b><span>Founder, empat keahlian</span></div>
+<div class="stat"><b data-v="8">0</b><span>Brand dan institusi yang percaya</span></div>
+<div class="stat"><b data-v="17">0</b><span>Project di portofolio</span></div>
+</div></div></section>
+
+
+<!-- ============ 4 MAIN ROADS (css/roads.css, js/roads.js) ============ -->
+<section class="rd" id="roads"><div class="wrap">
+<p class="eyebrow">Cara kami bekerja</p>
+<h2>4 Main Roads</h2>
+<div class="rp-wrap">
+<div class="rp on" tabindex="0" data-cur="Pilih"><small>Jalan pertama</small><span class="n">Idea</span><p>Titik awal. Kami gali insight dan gagasan yang relevan dengan audiens dan tujuan brand kamu.</p></div>
+<div class="rp" tabindex="0" data-cur="Pilih"><small>Jalan kedua</small><span class="n">Concept</span><p>Gagasan jadi konsep kreatif yang jelas: pesan, pendekatan, dan format yang paling pas.</p></div>
+<div class="rp" tabindex="0" data-cur="Pilih"><small>Jalan ketiga</small><span class="n">Visual</span><p>Konsep diwujudkan lewat desain, video, dan foto yang dibuat dari nol, dari font sampai warna.</p></div>
+<div class="rp" tabindex="0" data-cur="Pilih"><small>Jalan keempat</small><span class="n">Digital</span><p>Hasilnya hadir di ruang digital: website, dashboard, kampanye, dan penyebaran lewat KOL.</p></div>
+</div></div></section>
+
+
+<!-- ============ WORK (css/work.css, js/work.js, konten di js/data.js) ============ -->
+<section id="work" style="padding-bottom:70px"><div class="wrap">
+<div class="hd"><h2>Karya kami</h2><p class="eyebrow" style="margin:0">Geser untuk menjelajah</p></div>
+<div class="chips" id="chips" role="group" aria-label="Filter project"></div>
+</div>
+<div class="tk" id="tk"></div>
+<div class="rail"><i id="bar"></i></div>
+</section>
+
+
+<!-- ============ SERVICES (css/services.css) — konten langsung di HTML ini ============ -->
+<section id="service" style="padding-top:60px"><div class="wrap">
+<p class="eyebrow">Apa yang bisa kami pegang</p>
+<h2>Layanan</h2>
+<div class="svc">
+<div class="row"><h3>Branding</h3><p>Dari tampilan visual sampai presentasi online, dirancang dari nol. Font, grafis, dan warna semuanya bicara tentang kamu.</p></div>
+<div class="row"><h3>Website</h3><p>Dari halaman teks sederhana sampai aplikasi web yang kompleks, dirapikan dan disajikan dengan efektif.</p></div>
+<div class="row"><h3>Desain</h3><p>Tim desainer grafis dan branding kami menawarkan opsi yang cerdas, inovatif, dan khas, dengan fokus pada bisnis.</p></div>
+<div class="row"><h3>Video dan Foto</h3><p>Ide video dan foto terbaik yang enak ditonton dan mudah dipahami audiens.</p></div>
+<div class="row"><h3>KOL</h3><p>Kami hubungkan kamu dengan influencer yang tepat untuk mendorong branding atau strategi kampanye.</p></div>
+</div></div></section>
+
+
+<!-- ============ CLIENTS (css/clients.css, js/clients.js, konten di js/data.js) ============ -->
+<div class="cl" aria-label="Klien kami"><div class="wrap"><p class="eyebrow">Dipercaya oleh</p></div>
+<div class="m" id="m1"></div><div class="m r" id="m2"></div></div>
+
+
+<!-- ============ CONTACT (css/contact.css, js/contact.js) ============ -->
+<section class="ct" id="contact"><div class="wrap">
+<p class="eyebrow">Punya kebutuhan digital?</p>
+<h2>Yuk mulai.</h2>
+<a class="mail mag" data-cur="Kirim" href="mailto:Kramacreative.co@gmail.com">Kramacreative.co@gmail.com</a>
+<div class="cg">
+<div><small>Social media</small><a href="https://instagram.com/krama.co" target="_blank" rel="noopener">@krama.co</a></div>
+<div><small>Telepon / WhatsApp</small><a href="https://wa.me/6281315832616" target="_blank" rel="noopener">+62-813-1583-2616</a></div>
+<div><small>Website</small><a href="#top">www.kramakreatif.com</a></div>
+</div>
+<div class="ft">© 2026 Krama Creative. Semua hak dilindungi.</div>
+</div></section>
+</body>
+</html>

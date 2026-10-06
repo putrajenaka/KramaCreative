@@ -1,0 +1,10 @@
+/* CLIENTS: marquee dua baris */
+.cl{padding:0 0 110px;overflow:hidden}
+.m{display:flex;gap:48px;width:max-content;animation:mv 40s linear infinite;padding:6px 0}
+.m.r{animation-direction:reverse;animation-duration:52s}
+.cl:hover .m{animation-play-state:paused}
+.m span{font-size:clamp(48px,8vw,120px);font-weight:800;letter-spacing:-.05em;white-space:nowrap;color:transparent;-webkit-text-stroke:1.5px var(--fg);transition:color .25s;line-height:1.05}
+.m span:hover{color:var(--fg)}
+@keyframes mv{to{transform:translateX(-50%)}}
+
+@media(prefers-reduced-motion:reduce){.m{animation:none}}

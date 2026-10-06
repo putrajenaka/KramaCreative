@@ -1,0 +1,29 @@
+/* WORK: filter chip + kartu portrait yang bisa di-drag */
+.hd{display:flex;justify-content:space-between;align-items:end;gap:20px;flex-wrap:wrap}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin:44px 0 28px}
+.chip{border:1px solid var(--fg);background:none;color:var(--fg);padding:8px 16px;border-radius:99px;font:inherit;font-size:15px;cursor:pointer;transition:background .2s,color .2s}
+.chip:hover{background:var(--fg);color:var(--bg)}
+.chip[aria-pressed="true"]{background:var(--gold);color:#000;border-color:#c18f1f}
+.tk{display:flex;gap:16px;overflow-x:auto;padding:0 28px 8px;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+.tk::-webkit-scrollbar{display:none}
+.tk.dr{user-select:none}
+.pj{flex:0 0 clamp(250px,24vw,330px);aspect-ratio:800/1112;border:1px solid var(--fg);padding:22px;display:flex;flex-direction:column;justify-content:space-between;position:relative;overflow:hidden;user-select:none;transition:background .35s,color .35s;background:var(--bg);color:var(--fg)}
+.pj:nth-child(even){background:var(--fg);color:var(--bg)}
+.pj:hover{background:var(--bg);color:var(--fg)}
+.pj:nth-child(even):hover{background:var(--fg);color:var(--bg)}
+.pj .art{position:absolute;inset:0;opacity:.16;transition:opacity .4s,transform .8s}
+.pj:hover .art{opacity:.34;transform:scale(1.15) rotate(3deg)}
+.pj>*{position:relative}.pj>.art{position:absolute}
+.pj small{font-size:13px;opacity:.7}
+.pj h3{margin:0;font-size:clamp(30px,3.2vw,44px);line-height:.95;letter-spacing:-.045em;font-weight:800}
+.pj p{margin:12px 0 0;font-size:14.5px;max-height:0;opacity:0;overflow:hidden;transition:max-height .5s,opacity .4s}
+.pj:hover p{max-height:170px;opacity:1}
+@media(hover:none){.pj p{max-height:none;opacity:.9}}
+.a0{background:radial-gradient(currentColor 1.6px,transparent 2px) 0 0/16px 16px}
+.a1{background:repeating-linear-gradient(135deg,currentColor 0 2px,transparent 2px 14px)}
+.a2{background:linear-gradient(currentColor 1px,transparent 1px) 0 0/22px 22px,linear-gradient(90deg,currentColor 1px,transparent 1px) 0 0/22px 22px}
+.a3{background:repeating-radial-gradient(circle at 80% 20%,currentColor 0 2px,transparent 2px 18px)}
+.a4{background:conic-gradient(currentColor 25%,transparent 0 50%,currentColor 0 75%,transparent 0) 0 0/36px 36px}
+.hold.hide,.pj.hide{display:none}
+.rail{height:3px;background:var(--line);margin:26px 28px 0;position:relative}
+.rail i{position:absolute;inset:0;background:var(--fg);transform-origin:0 50%;transform:scaleX(.12)}

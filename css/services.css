@@ -1,0 +1,7 @@
+/* SERVICES: baris layanan dengan hover fill */
+.svc{margin-top:64px;border-top:1px solid var(--fg)}
+.row{display:grid;grid-template-columns:1.1fr 1fr;gap:24px;padding:30px 0 30px 0;border-bottom:1px solid var(--fg);align-items:center;background:linear-gradient(var(--fg),var(--fg)) no-repeat 0 100%/100% 0;transition:background-size .5s cubic-bezier(.2,.8,.2,1),color .4s,padding .4s}
+.row:hover{background-size:100% 100%;color:var(--bg);padding-left:22px;padding-right:22px}
+.row h3{margin:0;font-size:clamp(30px,5vw,72px);line-height:1;letter-spacing:-.045em;font-weight:800}
+.row p{margin:0;max-width:440px;opacity:.75}
+@media(max-width:720px){.row{grid-template-columns:1fr;gap:8px}}
